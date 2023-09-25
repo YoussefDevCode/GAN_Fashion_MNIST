@@ -152,9 +152,9 @@ def plot_gen(nbre, sample):
 
 # Function to train the GAN
 def train(gen, disc, gan, latent_dim):
-    epoches = 12
+    epochs = 12
     batch_size = 2056
-    for epoche in range(epoches):
+    for epoch in range(epochs):
         for i in range(batch_size):
             X_real, y_real = generate_real_imgs(batch_size=batch_size, x_train=x_train)
             X_fake, y_fake = generate_fake_imgs(
